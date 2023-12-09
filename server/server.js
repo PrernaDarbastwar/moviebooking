@@ -1,3 +1,27 @@
+const express = require('express')
+// initialse app object
+const app = express()
+
+app.get('/',(req,res) => {
+    res.json({ message: "Welcome to Upgrad Movie booking application development." });
+})
+app.listen(3000,()=> {
+    console.log("listening on port 3000")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const http = require('http')
 // const mongoose = require('mongoose')
 // const url = require('./config/db.config')
